@@ -52,9 +52,9 @@
                 <span class="sr-only">Toggle Dropdown</span>
               </a>
               <div class="nav-item dropdown-menu" aria-labelledby="dropdownMenu">
-                <a class="dropdown-item js-scroll-trigger" href="#ProjectA" onclick="projecttoggleA()">Corgant</a>
-                <a class="dropdown-item js-scroll-trigger" href="#ProjectB" onclick="projecttoggleB()">Breakdown Analysis</a>
-                <a class="dropdown-item js-scroll-trigger" href="#ProjectC" onclick="projecttoggleC()">Trajectory Calculations</a>
+                <a class="dropdown-item js-scroll-trigger" href="#ProjectA" onclick="projectnavA()">Corgant</a>
+                <a class="dropdown-item js-scroll-trigger" href="#ProjectB" onclick="projectnavB()">Breakdown Analysis</a>
+                <a class="dropdown-item js-scroll-trigger" href="#ProjectC" onclick="projectnavC()">Trajectory Calculations</a>
               </div>
             </li>
             <li class="nav-item">
@@ -101,10 +101,10 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-4 text-left">
-              <img class="img-fluid" src="img/DSC03696 (2).jpg" style="padding-bottom:10px">
+              <img class="img-fluid sr-button" src="img/DSC03696 (2).jpg" style="padding-bottom:10px">
             </div>
           <div class="col-lg-4 col-md-8 col-sm-12 text-left">
-            <p class="text-faded mb-4">I'm a third year Cognitive Science student at UC San Diego pursuing a B.S. in Design and Human-Computer Interactions. Some courses I've taken involve the study of neuroscience, human cognition and computer programming as well as applications in team-based design centered courses. When I'm not coding or creating wireframes and storyboards, you'll find me playing violin and guitar at home.</p>
+            <h5 class="text-faded mb-4">I'm a third year Cognitive Science student at UC San Diego pursuing a B.S. in Design and Human-Computer Interactions. Some courses I've taken involve the study of neuroscience, human cognition and computer programming as well as applications in team-based design centered courses. When I'm not coding or creating wireframes and storyboards, you'll find me playing violin and guitar and trying out new foods around town.</h5>
           </div>
         </div>
         <hr class="light my-4" style="max-width:150px">
@@ -120,13 +120,13 @@
               <h4 class="text-white">Tools:</h3>
               <h5 class="text-faded">MATLAB
                   <p class="mb-0">Figma</p>
-                  <p>Essential pen and paper</p>
+                  <p>Invision</p>
               </h5>
           </div>
         </div>
         <div class="row mx-auto">
           <div class="col mx-auto text-center">
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#Portfolio">Want to see my portfolio?</a>
+            <a class="btn btn-light btn-xl js-scroll-trigger sr-button" href="#Portfolio">Want to see my portfolio?</a>
           </div>
         </div>
       </div>
@@ -146,13 +146,13 @@
           <div class="col-lg-4 col-md-6 text-center" id="Project1">
             <div class="row" style="padding-bottom:10px">
               <div class="service-box mt-5 mx-auto">
-                  <i class="fa fa-4x fa-mobile text-primary mb-3 sr-icons"></i>
-                  <h3 class="mb-3">Corgant</h3>
-                  <p class="text-muted mb-0">COGS 187A: App design, wireframing, prototyping, and development for the elderly</p>
+                <i class="fa fa-4x fa-mobile text-primary mb-3 sr-icons"></i>
+                <h3 class="mb-3">Corgant</h3>
+                <p class="text-muted mb-0">COGS 187A: App design, wireframing, prototyping, and development for the elderly</p>
               </div>
             </div>
             <div class="row justify-content-center">
-              <a class="btn btn-primary btn-xl js-scroll-trigger text-white" onclick="projecttoggleA()">Check it Out!</a>
+              <a class="btn btn-primary btn-xl js-scroll-trigger text-white sr-icons" href="#ProjectA" onclick="projecttoggleA()">Check it Out!</a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 text-center" id="Project2">
@@ -164,7 +164,7 @@
               </div>
             </div>
             <div class="row justify-content-center">
-                <a class="btn btn-primary btn-xl js-scroll-trigger text-white" onclick="projecttoggleB()">Check it Out!</a>
+                <a class="btn btn-primary btn-xl js-scroll-trigger text-white sr-icons" href="#ProjectB" onclick="projecttoggleB()">Check it Out!</a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 text-center" id="Project3">
@@ -176,7 +176,7 @@
               </div>
             </div>
             <div class="row justify-content-center">
-                <a class="btn btn-primary btn-xl js-scroll-trigger text-white" onclick="projecttoggleC()">Check it Out!</a>
+              <a class="btn btn-primary btn-xl js-scroll-trigger text-white sr-icons" href="#ProjectC" onclick="projecttoggleC()">Check it Out!</a>
             </div>
           </div>
         </div>
@@ -186,6 +186,11 @@
     <section class="bg-primary" id="ProjectA" style="display:none">
       <div class="container">
         <div class="row">
+          <div class="col mx-auto text-center">
+            <img src="../Webpage/img/Corgant Logo.png" height="100px" width="auto" style="padding-bottom:10px">
+          </div>
+        </div>
+        <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading text-white">Corgant</h2>
             <hr class="light my-4">
@@ -193,14 +198,36 @@
         </div>
         <div class="row justify-content-center text-white">
           <div class="col-lg-4 mx-auto">
-            Design Process/User Testing
+            <p>Design Process/Storyboarding</p>
+            <div class="row text-faded mx-auto">
+              <p> During the 2018 summer, I took COGS 187A on Usability and Information Architecture, where I was given a task to form a team with other students and design an app for the elderly population. We began the course by designing a logo to represent our team, which is displayed above the title.</p>
+              <p> Our first task was to figure out what kind of app we would be designing, so we started out with a series of user testing and interviews to generate personas and storyboards to represent the population we were designing for. We realized several problems that affected the elderly population in general, including loneliness, health and mental complications, lack of technological comfort and usage, and a rapidly growing generational gap. We then focused in on a couple specific issues to tackle, recognizing that it would be nearly impossible for a single app to effectively combat these problems. This resulted in converging on a central idea to bridge the generational gap while helping the elderly in running errands, namely grocery shopping.</p>
+            </div>
+
           </div>
           <div class="col-lg-4 mx-auto">
-            Wireframe/Prototype
+            <p>Wireframe/Prototype</p>
+            <div class="row text-faded mx-auto">
+              <p> Our next step in the design phase was to begin prototyping and wireframing this idea into a concrete possibility of an app. We used several individually created paper prototypes to demonstrate basic app functionality and design, but many were not focused enough on the overarching need that we were trying to satisfy, nor had the functionality and content we wanted in our app. After significant redesign and analysis as a team, we put together a prototype cooperatively on a chalkboard. This “chalkboard prototype” was then put onto a wireframing program called Figma.</p>
+              <p> Our Figma prototype allowed us to add some interactivity and design elements to the prototype that prompted additional user testing to determine if certain features were able to be understood, such as a multiple selection checkbox, or what color schemes or button shapes would be too striking or big for our target population. Below is an example of some of the screens developed during the prototyping phase.</p>
+              <div class="col mx-auto">
+                <img class="img-fluid" src="../Webpage/img/Figma prototype alpha.png" height="auto" width="auto">                
+              </div>
+            </div>
           </div>
           <div class="col-lg-4 mx-auto">
-            Finished Product
+            <p>High-Fidelity Prototype/Future Direction</p>
+            <div class="row text-faded mx-auto">
+              <p> In the last week of the 5 week course, we put together a working high-fidelity prototype that had many design elements and features we wanted to implement in our final version of our app, which we named “Shoperone”.</p>
+              <p> Our main features include connecting seniors citizens with volunteers that accompany them throughout their entire shopping experience, from the time they step out the door, to shopping in store, to returning home safely. The app architecture consists of 2 different sides of the app; 1 for volunteers, 1 for seniors. The senior side is designed with simplicity and speed in mind to allow elderly using the app to navigate through as quickly and efficiently as possible without getting lost in the app. The volunteer side is oriented towards the younger generation, being more complex to navigate, yet adding significantly more functionality and options. An additional incentive for volunteers is the ability to reward and track volunteering hours, which is in particular demand during the high school years. This gives seniors using the app a better, more wholesome shopping experience by connecting them with younger volunteers, increasing activity by encouraging elderly to go out and run errands, and providing safety in the form of an on demand assistant.</p>
+              <p> Due to time constraints, my team and I were not able to take the app to the final form of a working app. However, if there was more time and/or funding, I would have liked to conduct further user testing of the high-fidelity prototype and continue to add features such as other errands and functionality to the app in the public release version.</p>
+              <div class="col mx-auto">
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="row justify-content-center text-white">
+          <a> For more information about our design process, check us out at&nbsp</a><a href="http://medium.com/@corgantcorgi"> http://www.medium.com/@corgantcorgi</a>
         </div>
         <hr class="light my-4">
       </div>
@@ -271,8 +298,8 @@
             </div>
           </div>
       </div>
-      <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
+      <div class="container">
+        <div class="row no-gutters">
           <div class="col-lg-6 col-xs-12">
             <a class="portfolio-box">
               <img class="img-fluid" src="img/violin-2946994_1920 cropped.jpg" alt="">
@@ -282,8 +309,21 @@
                     Music
                   </div>
                   <div class="project-name">
-                    Violin
+                    Violin | Guitar
                   </div>
+                  <hr class="light">
+                  <h6 class="text-faded"> Violin</h6>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <h6 class="text-faded"> Guitar</h6>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
                 </div>
               </div>
             </a>
@@ -299,6 +339,19 @@
                   <div class="project-name">
                     Final Cut Pro | Adobe Premier Pro
                   </div>
+                  <hr class="light">
+                  <h6 class="text-faded"> Final Cut Pro: </h6>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <h6 class="text-faded"> Adobe Premier Pro: </h6>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
                 </div>
               </div>
             </a>
@@ -314,6 +367,19 @@
                   <div class="project-name">
                     Photoshop | Illustrator
                   </div>
+                  <hr class="light">
+                  <h6 class="text-faded"> Photoshop: </h6>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <h6 class="text-faded"> Illustrator: </h6>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
                 </div>
               </div>
             </a>
@@ -329,6 +395,25 @@
                   <div class="project-name">
                     MATLAB | JAVA | HTML | CSS | Bootstrap
                   </div>
+                  <hr class="light">
+                  <h6 class="text-faded"> MATLAB: </h6>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <h6 class="text-faded"> JAVA: </h6>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <h6 class="text-faded"> HTML/CSS/Bootstrap: </h6>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
                 </div>
               </div>
             </a>

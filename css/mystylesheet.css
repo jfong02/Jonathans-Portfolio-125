@@ -305,7 +305,8 @@ header.masthead p {
   font-size: 18px;
 }
 
-.portfolio-box:hover .portfolio-box-caption {
+.portfolio-box:hover .portfolio-box-caption,
+.portfolio-box:active .portfolio-box-caption {
   opacity: 1;
 }
 
@@ -350,4 +351,8 @@ header.masthead p {
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+.checked {
+  color: rgb(46, 132, 243);
 }

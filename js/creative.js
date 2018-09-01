@@ -86,6 +86,14 @@ function projecttoggleA() {
         a.style.display = "none";
     }
 }
+function projectnavA() {
+  var a = document.getElementById("ProjectA");
+  var b = document.getElementById("ProjectB");
+  var c = document.getElementById("ProjectC");
+    a.style.display="block";
+    b.style.display="none";
+    c.style.display="none";
+}
 function projecttoggleB() {
   var a = document.getElementById("ProjectA");
   var b = document.getElementById("ProjectB");
@@ -98,6 +106,14 @@ function projecttoggleB() {
         b.style.display = "none";
     }
 }
+function projectnavB() {
+  var a = document.getElementById("ProjectA");
+  var b = document.getElementById("ProjectB");
+  var c = document.getElementById("ProjectC");
+    a.style.display="none";
+    b.style.display="block";
+    c.style.display="none";
+}
 function projecttoggleC() {
   var a = document.getElementById("ProjectA");
   var b = document.getElementById("ProjectB");
@@ -109,4 +125,12 @@ function projecttoggleC() {
     } else {
         c.style.display = "none";
     }
+}
+function projectnavC() {
+  var a = document.getElementById("ProjectA");
+  var b = document.getElementById("ProjectB");
+  var c = document.getElementById("ProjectC");
+    a.style.display="none";
+    b.style.display="none";
+    c.style.display="block";
 }
