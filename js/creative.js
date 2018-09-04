@@ -67,10 +67,12 @@ function activateskill1() {
 }
 function activateskill2() {
   var a = document.getElementById("Video")
-  if (a.style.opacity=="0")
+  if (a.style.opacity=="0") {
     a.style.opacity="1";
-  else
+  }
+  else {
     a.style.opacity="0";
+  }
 }
 function activateskill3() {
   var a = document.getElementById("Photo")
