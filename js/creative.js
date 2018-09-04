@@ -79,6 +79,7 @@ function projecttoggleA() {
         ba.setAttribute("href", "#Project1");
         ba.textContent="Check it Out!"
     }
+    blueresume();
 }
 function projecttoggleB() {
   var a = document.getElementById("ProjectA");
@@ -100,6 +101,7 @@ function projecttoggleB() {
         bb.setAttribute("href", "#Project2");
         bb.textContent="Check it Out!"
     }
+    blueresume();
 }
 function projecttoggleC() {
   var a = document.getElementById("ProjectA");
@@ -121,6 +123,7 @@ function projecttoggleC() {
         bc.setAttribute("href", "#Project3");
         bc.textContent="Check it Out!"
     }
+    blueresume();
 }
 
 //For projects via navbar
@@ -137,6 +140,7 @@ function projectnavA() {
     ba.textContent="Collapse"
     bb.textContent="Check it Out!"
     bc.textContent="Check it Out!"
+    blueresume();
 }
 function projectnavB() {
   var a = document.getElementById("ProjectA");
@@ -151,6 +155,7 @@ function projectnavB() {
     ba.textContent="Collapse"
     bb.textContent="Check it Out!"
     bc.textContent="Check it Out!"
+    blueresume();
 }
 function projectnavC() {
   var a = document.getElementById("ProjectA");
@@ -165,4 +170,37 @@ function projectnavC() {
     ba.textContent="Collapse"
     bb.textContent="Check it Out!"
     bc.textContent="Check it Out!"
+    blueresume();
+}
+
+//Change looks of resume depending on if projects are toggled
+function blueresume() {
+  var activeprojectA = document.getElementById("ProjectA");
+  var activeprojectB = document.getElementById("ProjectB");
+  var activeprojectC = document.getElementById("ProjectC");
+  var resume1 = document.getElementById("Resume");
+  var resume2 = document.getElementById("Resume2");
+  var resumestart1 = document.getElementById("resumetrianglewhite");
+  var resumestart2 = document.getElementById("resumetriangleblue");
+  var projtriangle = document.getElementById("projecttriangle");
+  var resumeend1 = document.getElementById("restriangle1");
+  var resumeend2 = document.getElementById("restriangle2");
+  
+  if (activeprojectA.style.display=="block" || activeprojectB.style.display=="block" || activeprojectC.style.display=="block") {
+    resume1.style.display="none";
+    resume2.style.display="block";
+    resumestart1.style.display = "none";
+    resumestart2.style.display = "block";
+    projtriangle.style.display = "block";
+    resumeend1.style.display = "none";
+    resumeend2.style.display = "block";
+  } else {
+    resume1.style.display="block";
+    resume2.style.display="none";
+    resumestart1.style.display = "block";
+    resumestart2.style.display = "none";
+    projtriangle.style.display = "none";
+    resumeend1.style.display = "block";
+    resumeend2.style.display = "none";
+  }
 }

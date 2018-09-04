@@ -46,6 +46,52 @@ h6 {
   background-color: #212529 !important;
 }
 
+.bg-white {
+  height: 20px;
+  background-color: #fff;
+}
+
+.triangledownblue{
+  height: 0px;
+  width: 0px;
+  border-top: solid 30px rgb(30, 51, 172);
+  border-left: solid 70px transparent;
+  border-right: solid 70px transparent;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.triangledownwhite{
+  height: 0px;
+  width: 0px;
+  border-top: solid 30px #fff;
+  border-left: solid 70px transparent;
+  border-right: solid 70px transparent;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.triangledowngrey{
+  height: 0px;
+  width: 0px;
+  border-top: solid 30px rgb(223, 223, 223);
+  border-left: solid 70px transparent;
+  border-right: solid 70px transparent;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.triangleupblueproject{
+  height: 0px;
+  width: 0px;
+  border-bottom: solid 30px rgb(30, 51, 172);
+  border-left: solid 73px transparent;
+  border-right: solid 73px transparent;
+  margin-left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  position: absolute;
+}
+
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -321,17 +367,47 @@ header.masthead p {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 576px) {
-  .portfolio-box-caption {
-    font-size: 10px;
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category .project-name {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 575px) {
-  .portfolio-box-caption {
-    font-size: 9px;
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category .project-name {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 470px) {
+  .portfolio-box-caption-content {
+    font-size: 10px;
+  }
+  .portfolio-box-caption-content .project-category .project-name {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 420px) {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    font-size: 7px;
+  }
+  .project-category .project-name {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    font-size: 5px;
+  }
+  .project-category .project-name {
+    font-size: 4px;
   }
 }
 
