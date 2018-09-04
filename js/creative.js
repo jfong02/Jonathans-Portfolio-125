@@ -66,18 +66,25 @@ function projecttoggleA() {
   var ba = document.getElementById("projbtnA");
   var bb = document.getElementById("projbtnB");
   var bc = document.getElementById("projbtnC");
+  var pt1 = document.getElementById("projecttriangle1")
+  var pt2 = document.getElementById("projecttriangle2")
+  var pt3 = document.getElementById("projecttriangle3")
     b.style.display="none";
     c.style.display="none";
+    pt2.style.display="none";
+    pt3.style.display="none";
     if (a.style.display === "none") {
         a.style.display = "block";
         ba.setAttribute("href", "#ProjectA");
         ba.textContent="Collapse";
         bb.textContent="Check it Out!"
         bc.textContent="Check it Out!"
+        pt1.style.display="block";
     } else {
         a.style.display = "none";
         ba.setAttribute("href", "#Project1");
         ba.textContent="Check it Out!"
+        pt1.style.display="none";
     }
     blueresume();
 }
@@ -88,18 +95,25 @@ function projecttoggleB() {
   var ba = document.getElementById("projbtnA");
   var bb = document.getElementById("projbtnB");
   var bc = document.getElementById("projbtnC");
+  var pt1 = document.getElementById("projecttriangle1")
+  var pt2 = document.getElementById("projecttriangle2")
+  var pt3 = document.getElementById("projecttriangle3")
     a.style.display="none";
     c.style.display="none";
+    pt1.style.display="none";
+    pt3.style.display="none";
     if (b.style.display === "none") {
         b.style.display = "block";
         bb.setAttribute("href", "#ProjectB");
         bb.textContent="Collapse";
         ba.textContent="Check it Out!"
         bc.textContent="Check it Out!"
+        pt2.style.display="block";
     } else {
         b.style.display = "none";
         bb.setAttribute("href", "#Project2");
         bb.textContent="Check it Out!"
+        pt2.style.display="none";
     }
     blueresume();
 }
@@ -110,18 +124,25 @@ function projecttoggleC() {
   var ba = document.getElementById("projbtnA");
   var bb = document.getElementById("projbtnB");
   var bc = document.getElementById("projbtnC");
+  var pt1 = document.getElementById("projecttriangle1")
+  var pt2 = document.getElementById("projecttriangle2")
+  var pt3 = document.getElementById("projecttriangle3")
     a.style.display="none";
     b.style.display="none";
+    pt1.style.display="none";
+    pt2.style.display="none";
     if (c.style.display === "none") {
         c.style.display = "block";
         bc.setAttribute("href", "#ProjectC");
         bc.textContent="Collapse";
         ba.textContent="Check it Out!"
         bb.textContent="Check it Out!"
+        pt3.style.display="block";
     } else {
         c.style.display = "none";
         bc.setAttribute("href", "#Project3");
         bc.textContent="Check it Out!"
+        pt3.style.display="none";
     }
     blueresume();
 }
@@ -134,12 +155,18 @@ function projectnavA() {
   var ba = document.getElementById("projbtnA");
   var bb = document.getElementById("projbtnB");
   var bc = document.getElementById("projbtnC");
+  var pt1 = document.getElementById("projecttriangle1")
+  var pt2 = document.getElementById("projecttriangle2")
+  var pt3 = document.getElementById("projecttriangle3")
     a.style.display="block";
     b.style.display="none";
     c.style.display="none";
     ba.textContent="Collapse"
     bb.textContent="Check it Out!"
     bc.textContent="Check it Out!"
+    pt1.style.display="block";
+    pt2.style.display="none";
+    pt3.style.display="none";
     blueresume();
 }
 function projectnavB() {
@@ -149,12 +176,18 @@ function projectnavB() {
   var ba = document.getElementById("projbtnA");
   var bb = document.getElementById("projbtnB");
   var bc = document.getElementById("projbtnC");
+  var pt1 = document.getElementById("projecttriangle1")
+  var pt2 = document.getElementById("projecttriangle2")
+  var pt3 = document.getElementById("projecttriangle3")
     a.style.display="none";
     b.style.display="block";
     c.style.display="none";
-    ba.textContent="Collapse"
-    bb.textContent="Check it Out!"
+    ba.textContent="Check it Out!"
+    bb.textContent="Collapse"
     bc.textContent="Check it Out!"
+    pt1.style.display="none";
+    pt2.style.display="block";
+    pt3.style.display="none";
     blueresume();
 }
 function projectnavC() {
@@ -164,12 +197,18 @@ function projectnavC() {
   var ba = document.getElementById("projbtnA");
   var bb = document.getElementById("projbtnB");
   var bc = document.getElementById("projbtnC");
+  var pt1 = document.getElementById("projecttriangle1")
+  var pt2 = document.getElementById("projecttriangle2")
+  var pt3 = document.getElementById("projecttriangle3")
     a.style.display="none";
     b.style.display="none";
     c.style.display="block";
-    ba.textContent="Collapse"
+    ba.textContent="Check it Out!"
     bb.textContent="Check it Out!"
-    bc.textContent="Check it Out!"
+    bc.textContent="Collapse"
+    pt1.style.display="none";
+    pt2.style.display="none";
+    pt3.style.display="block";
     blueresume();
 }
 
@@ -182,25 +221,25 @@ function blueresume() {
   var resume2 = document.getElementById("Resume2");
   var resumestart1 = document.getElementById("resumetrianglewhite");
   var resumestart2 = document.getElementById("resumetriangleblue");
-  var projtriangle = document.getElementById("projecttriangle");
   var resumeend1 = document.getElementById("restriangle1");
   var resumeend2 = document.getElementById("restriangle2");
+  var resumenavlink = document.getElementById("resumenav");
   
   if (activeprojectA.style.display=="block" || activeprojectB.style.display=="block" || activeprojectC.style.display=="block") {
     resume1.style.display="none";
     resume2.style.display="block";
     resumestart1.style.display = "none";
     resumestart2.style.display = "block";
-    projtriangle.style.display = "block";
     resumeend1.style.display = "none";
     resumeend2.style.display = "block";
+    resumenavlink.setAttribute("href", "#Resume2");
   } else {
     resume1.style.display="block";
     resume2.style.display="none";
     resumestart1.style.display = "block";
     resumestart2.style.display = "none";
-    projtriangle.style.display = "none";
     resumeend1.style.display = "block";
     resumeend2.style.display = "none";
+    resumenavlink.setAttribute("href", "#Resume");
   }
 }

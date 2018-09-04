@@ -39,7 +39,8 @@ h6 {
 }
 
 .bg-primary {
-  background-color: rgb(30, 51, 172) !important;
+  background-color: rgb(43, 68, 207) !important; 
+  /* rgb(30, 52, 172) */
 }
 
 .bg-dark {
@@ -54,7 +55,7 @@ h6 {
 .triangledownblue{
   height: 0px;
   width: 0px;
-  border-top: solid 30px rgb(30, 51, 172);
+  border-top: solid 30px rgb(43, 68, 207);
   border-left: solid 70px transparent;
   border-right: solid 70px transparent;
   margin-left: 50%;
@@ -81,13 +82,28 @@ h6 {
   transform: translateX(-50%);
   position: absolute;
 }
-.triangleupblueproject{
+.triangleupblueproject {
   height: 0px;
   width: 0px;
-  border-bottom: solid 30px rgb(30, 51, 172);
+  border-bottom: solid 30px rgb(43, 68, 207);
   border-left: solid 73px transparent;
   border-right: solid 73px transparent;
   margin-left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  position: absolute;
+}
+.p1 {
+  margin-left: 20%;
+  transform: translateX(-50%) translateY(100px);
+  position: absolute;
+}
+.p2 {
+  margin-left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  position: absolute;
+}
+.p3 {
+  margin-left: 80%;
   transform: translateX(-50%) translateY(100px);
   position: absolute;
 }
@@ -138,12 +154,12 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
-  color: rgb(30, 52, 172);
+  color: rgb(43, 68, 207);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: rgb(30, 52, 172);
+  color: rgb(43, 68, 207);
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -156,12 +172,12 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: rgb(30, 52, 172);
+  color: rgb(43, 68, 207);
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: rgb(30, 52, 172) !important;
+  color: rgb(43, 68, 207) !important;
   background-color: transparent;
 }
 
@@ -202,10 +218,10 @@ img::-moz-selection {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: rgb(30, 52, 172);
+    color: rgb(43, 68, 207);
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: rgb(30, 52, 172);
+    color: rgb(43, 68, 207);
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -321,7 +337,7 @@ header.masthead p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgb(30, 52, 172);
+  background: rgb(43, 68, 207);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -412,7 +428,8 @@ header.masthead p {
 }
 
 .text-primary {
-  color: rgb(50, 52, 172) !important;
+  color: rgb(43, 68, 207) !important;
+  /* rgb(50, 52, 172) */
 }
 
 .btn {
@@ -428,7 +445,7 @@ header.masthead p {
 }
 
 .btn-primary {
-  background-color: rgb(30, 52, 172);
+  background-color: rgb(43, 68, 207);
   border-color: #F05F40;
 }
 
