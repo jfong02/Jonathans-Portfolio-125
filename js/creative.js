@@ -58,6 +58,35 @@
 
 })(jQuery); // End of use strict
 
+function activateskill1() {
+  var a = document.getElementById("Music")
+  if (a.style.opacity=="0")
+    a.style.opacity="1";
+  else
+    a.style.opacity="0";
+}
+function activateskill2() {
+  var a = document.getElementById("Video")
+  if (a.style.opacity=="0")
+    a.style.opacity="1";
+  else
+    a.style.opacity="0";
+}
+function activateskill3() {
+  var a = document.getElementById("Photo")
+  if (a.style.opacity=="0")
+    a.style.opacity="1";
+  else
+    a.style.opacity="0";
+}
+function activateskill4() {
+  var a = document.getElementById("Coding")
+  if (a.style.opacity=="0")
+    a.style.opacity="1";
+  else
+    a.style.opacity="0";
+}
+
 // Toggle show/hide and go to projects (change project button href to appropriate link)
 function projecttoggleA() {
   var a = document.getElementById("ProjectA");
