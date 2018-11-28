@@ -55,6 +55,17 @@
     scale: 0.3,
     distance: '0px'
   }, 300);
+  sr.reveal('.sr-projectimg', {
+    duration: 800,
+    scale: 0.8,
+    distance: '0px'
+  }, 200);
+  sr.reveal('.sr-img', {
+    duration: 1000,
+    scale: 0.9,
+    delay: 200,
+    distance: '0px'
+  });
 
 })(jQuery); // End of use strict
 
