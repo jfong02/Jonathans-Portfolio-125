@@ -8,6 +8,11 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 
+p {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
 hr {
   max-width: 50px;
   border-width: 3px;
@@ -26,7 +31,7 @@ a {
 }
 
 a:hover {
-  color: rgb(83, 178, 255);
+  color: rgb(83, 178, 255) !important;
 }
 
 h1,
@@ -50,6 +55,10 @@ h6 {
 .bg-white {
   height: 20px;
   background-color: #fff;
+}
+
+.bg-grey {
+  background-color: lightgrey;
 }
 
 .triangledownblue{
@@ -509,3 +518,66 @@ header.masthead p {
 .checked {
   color: rgb(46, 132, 243);
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.dropdown-toggle::after {
+  vertical-align: .255em;
+  content: "";
+  border-top: .4em solid;
+  border-right: .4em solid transparent;
+  border-bottom: 0;
+  border-left: .4em solid transparent;
+}
+
+/* TABS FOR PROJECT */
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.333333333%;
+  /* border-top-left-radius: 25px;
+  border-top-right-radius: 25px; */
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  display: none;
+  padding: 0px 20px;
+  margin-top: 100px;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+#Corgant {background-color: white;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+
+}
+

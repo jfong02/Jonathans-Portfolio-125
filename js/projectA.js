@@ -51,223 +51,62 @@
       scale: 0.3,
       distance: '0px'
     }, 300);
+    sr.reveal('.sr-projectimg', {
+      duration: 800,
+      scale: 0.8,
+      distance: '0px'
+    }, 200);
+    sr.reveal('.sr-img', {
+      duration: 1000,
+      scale: 0.9,
+      delay: 200,
+      distance: '0px'
+    });
   
   })(jQuery); // End of use strict
   
-  function activateskill1() {
-    var a = document.getElementById("Music")
-    if (a.style.opacity=="0")
-      a.style.opacity="1";
-    else
-      a.style.opacity="0";
-  }
-  function activateskill2() {
-    var a = document.getElementById("Video")
-    if (a.style.opacity=="0") {
-      a.style.opacity="1";
-    }
-    else {
-      a.style.opacity="0";
-    }
-  }
-  function activateskill3() {
-    var a = document.getElementById("Photo")
-    if (a.style.opacity=="0")
-      a.style.opacity="1";
-    else
-      a.style.opacity="0";
-  }
-  function activateskill4() {
-    var a = document.getElementById("Coding")
-    if (a.style.opacity=="0")
-      a.style.opacity="1";
-    else
-      a.style.opacity="0";
-  }
+  // $('.dropdown-menu').on("click",'.dropdown-item',function() {
+  //   $("#defaultOpen").removeAttr("id");
+  //   $("btn.tablinky").attr('id', 'defaultOpen');
+  //   $("#defaultOpen").click();
+  // })
   
-  // Toggle show/hide and go to projects (change project button href to appropriate link)
-  function projecttoggleA() {
-    var a = document.getElementById("ProjectA");
-    var b = document.getElementById("ProjectB");
-    var c = document.getElementById("ProjectC");
-    var ba = document.getElementById("projbtnA");
-    var bb = document.getElementById("projbtnB");
-    var bc = document.getElementById("projbtnC");
-    var pt1 = document.getElementById("projecttriangle1")
-    var pt2 = document.getElementById("projecttriangle2")
-    var pt3 = document.getElementById("projecttriangle3")
-      b.style.display="none";
-      c.style.display="none";
-      pt2.style.display="none";
-      pt3.style.display="none";
-      if (a.style.display === "none") {
-          a.style.display = "block";
-          ba.setAttribute("href", "#ProjectA");
-          ba.textContent="Collapse";
-          bb.textContent="Check it Out!"
-          bc.textContent="Check it Out!"
-          pt1.style.display="block";
-      } else {
-          a.style.display = "none";
-          ba.setAttribute("href", "#Project1");
-          ba.textContent="Check it Out!"
-          pt1.style.display="none";
+  function openPage(pageName, elmnt, color) {
+      // Hide all elements with class="tabcontent" by default */
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
       }
-      blueresume();
-  }
-  function projecttoggleB() {
-    var a = document.getElementById("ProjectA");
-    var b = document.getElementById("ProjectB");
-    var c = document.getElementById("ProjectC");
-    var ba = document.getElementById("projbtnA");
-    var bb = document.getElementById("projbtnB");
-    var bc = document.getElementById("projbtnC");
-    var pt1 = document.getElementById("projecttriangle1")
-    var pt2 = document.getElementById("projecttriangle2")
-    var pt3 = document.getElementById("projecttriangle3")
-      a.style.display="none";
-      c.style.display="none";
-      pt1.style.display="none";
-      pt3.style.display="none";
-      if (b.style.display === "none") {
-          b.style.display = "block";
-          bb.setAttribute("href", "#ProjectB");
-          bb.textContent="Collapse";
-          ba.textContent="Check it Out!"
-          bc.textContent="Check it Out!"
-          pt2.style.display="block";
-      } else {
-          b.style.display = "none";
-          bb.setAttribute("href", "#Project2");
-          bb.textContent="Check it Out!"
-          pt2.style.display="none";
+
+      // Remove the background color of all tablinks/buttons
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
       }
-      blueresume();
-  }
-  function projecttoggleC() {
-    var a = document.getElementById("ProjectA");
-    var b = document.getElementById("ProjectB");
-    var c = document.getElementById("ProjectC");
-    var ba = document.getElementById("projbtnA");
-    var bb = document.getElementById("projbtnB");
-    var bc = document.getElementById("projbtnC");
-    var pt1 = document.getElementById("projecttriangle1")
-    var pt2 = document.getElementById("projecttriangle2")
-    var pt3 = document.getElementById("projecttriangle3")
-      a.style.display="none";
-      b.style.display="none";
-      pt1.style.display="none";
-      pt2.style.display="none";
-      if (c.style.display === "none") {
-          c.style.display = "block";
-          bc.setAttribute("href", "#ProjectC");
-          bc.textContent="Collapse";
-          ba.textContent="Check it Out!"
-          bb.textContent="Check it Out!"
-          pt3.style.display="block";
-      } else {
-          c.style.display = "none";
-          bc.setAttribute("href", "#Project3");
-          bc.textContent="Check it Out!"
-          pt3.style.display="none";
+
+      // Show the specific tab content
+      document.getElementById(pageName).style.display = "block";
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.animation = '';
       }
-      blueresume();
+            
+      // Add the specific color to the button used to open the tab content
+      if (elmnt !='')
+        elmnt.style.backgroundColor = color;
   }
-  
+
   //For projects via navbar
   function projectnavA() {
-    var a = document.getElementById("ProjectA");
-    var b = document.getElementById("ProjectB");
-    var c = document.getElementById("ProjectC");
-    var ba = document.getElementById("projbtnA");
-    var bb = document.getElementById("projbtnB");
-    var bc = document.getElementById("projbtnC");
-    var pt1 = document.getElementById("projecttriangle1")
-    var pt2 = document.getElementById("projecttriangle2")
-    var pt3 = document.getElementById("projecttriangle3")
-      a.style.display="block";
-      b.style.display="none";
-      c.style.display="none";
-      ba.textContent="Collapse"
-      bb.textContent="Check it Out!"
-      bc.textContent="Check it Out!"
-      pt1.style.display="block";
-      pt2.style.display="none";
-      pt3.style.display="none";
-      blueresume();
+    $('.pA').css('background-color', 'rgb(43, 68, 207)');
   }
   function projectnavB() {
-    var a = document.getElementById("ProjectA");
-    var b = document.getElementById("ProjectB");
-    var c = document.getElementById("ProjectC");
-    var ba = document.getElementById("projbtnA");
-    var bb = document.getElementById("projbtnB");
-    var bc = document.getElementById("projbtnC");
-    var pt1 = document.getElementById("projecttriangle1")
-    var pt2 = document.getElementById("projecttriangle2")
-    var pt3 = document.getElementById("projecttriangle3")
-      a.style.display="none";
-      b.style.display="block";
-      c.style.display="none";
-      ba.textContent="Check it Out!"
-      bb.textContent="Collapse"
-      bc.textContent="Check it Out!"
-      pt1.style.display="none";
-      pt2.style.display="block";
-      pt3.style.display="none";
-      blueresume();
+    $('.pB').css('background-color', 'rgb(43, 68, 207)');
   }
   function projectnavC() {
-    var a = document.getElementById("ProjectA");
-    var b = document.getElementById("ProjectB");
-    var c = document.getElementById("ProjectC");
-    var ba = document.getElementById("projbtnA");
-    var bb = document.getElementById("projbtnB");
-    var bc = document.getElementById("projbtnC");
-    var pt1 = document.getElementById("projecttriangle1")
-    var pt2 = document.getElementById("projecttriangle2")
-    var pt3 = document.getElementById("projecttriangle3")
-      a.style.display="none";
-      b.style.display="none";
-      c.style.display="block";
-      ba.textContent="Check it Out!"
-      bb.textContent="Check it Out!"
-      bc.textContent="Collapse"
-      pt1.style.display="none";
-      pt2.style.display="none";
-      pt3.style.display="block";
-      blueresume();
+    $('.pC').css('background-color', 'rgb(43, 68, 207)');
   }
-  
-  //Change looks of resume depending on if projects are toggled
-  function blueresume() {
-    var activeprojectA = document.getElementById("ProjectA");
-    var activeprojectB = document.getElementById("ProjectB");
-    var activeprojectC = document.getElementById("ProjectC");
-    var resume1 = document.getElementById("Resume");
-    var resume2 = document.getElementById("Resume2");
-    var resumestart1 = document.getElementById("resumetrianglewhite");
-    var resumestart2 = document.getElementById("resumetriangleblue");
-    var resumeend1 = document.getElementById("restriangle1");
-    var resumeend2 = document.getElementById("restriangle2");
-    var resumenavlink = document.getElementById("resumenav");
-    
-    if (activeprojectA.style.display=="block" || activeprojectB.style.display=="block" || activeprojectC.style.display=="block") {
-      resume1.style.display="none";
-      resume2.style.display="block";
-      resumestart1.style.display = "none";
-      resumestart2.style.display = "block";
-      resumeend1.style.display = "none";
-      resumeend2.style.display = "block";
-      resumenavlink.setAttribute("href", "#Resume2");
-    } else {
-      resume1.style.display="block";
-      resume2.style.display="none";
-      resumestart1.style.display = "block";
-      resumestart2.style.display = "none";
-      resumeend1.style.display = "block";
-      resumeend2.style.display = "none";
-      resumenavlink.setAttribute("href", "#Resume");
-    }
-  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
   
